@@ -1,0 +1,80 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>BitBook App</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BitBook" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="BitBook: Single Page Application" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="BitBook is a single page application built with ASP.NET WebApi, Angular.js and MongoDb." />
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body ng-app="bitBookApp">
+    <div ng-controller="BaseCtrl">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" ng-href="#/">
+                        <i class="fa fa-home"></i>
+                        BitBook
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" ng-if="authenticatedUser.hasRegistered">
+                        <li>
+                            <form novalidate class="topBarSearchForm" ng-submit="search(searchKey)">
+                                <input type="search" class="form-control" ng-model="searchKey" placeholder="search friends by name" />
+                            </form>
+                        </li>
+                        <li>
+                            <a ng-href="#/friends">
+                                <i class="fa fa-users"></i>
+                                My Friends
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-href="#/friends/requests">
+                                <i class="fa fa-users"></i>
+                                Pending Friend Requests
+                            </a>
+                        </li>
+                    </ul>
+                    <div data-cd-topbar></div>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div ng-view></div>
+            <hr />
+            <footer class="pull-right">
+                <p>&copy; @DateTime.Now.Year - BitBook</p>
+            </footer>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/library")
+    @Scripts.Render("~/bundles/application")
+    <script src="~/SignalR/hubs"></script>
+</body>
+</html>

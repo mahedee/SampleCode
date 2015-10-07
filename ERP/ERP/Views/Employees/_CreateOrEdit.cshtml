@@ -1,0 +1,68 @@
+@model ERP.Models.Employee
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Id)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Id)
+    @Html.ValidationMessageFor(model => model.Id)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Address)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Address)
+    @Html.ValidationMessageFor(model => model.Address)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.DeptId)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.DeptId)
+    @Html.ValidationMessageFor(model => model.DeptId)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.DesignationId)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.DesignationId)
+    @Html.ValidationMessageFor(model => model.DesignationId)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.BloodGroupId)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.BloodGroupId)
+    @Html.ValidationMessageFor(model => model.BloodGroupId)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.MaritalStatus)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.MaritalStatus)
+    @Html.ValidationMessageFor(model => model.MaritalStatus)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.JoiningDt)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.JoiningDt)
+    @Html.ValidationMessageFor(model => model.JoiningDt)
+</div>
+

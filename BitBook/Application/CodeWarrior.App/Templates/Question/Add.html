@@ -1,0 +1,28 @@
+﻿<form class="form-horizontal" name="QuestionAddForm">
+    <fieldset>
+        <div class="form-group">
+            <label for="Title" class="col-lg-2 control-label">
+                Title
+            </label>
+            <div class="col-lg-9">
+                <input type="text" id="Title" ng-model="question.title" placeholder="Question Title" class="form-control" ng-required="true" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Body" class="col-lg-2 control-label">
+                Question Body
+            </label>
+            <div class="col-lg-9">
+                <textarea class="form-control" rows="8" id="Body" ng-model="question.body"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button class="btn btn-primary" ng-click="addQuestion(question)">
+                    Add
+                </button>
+            </div>
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,189 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', arial, helvetica, sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#toast-container > div {
+    -webkit-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    box-shadow: none !important;
+    -ms-opacity: 1 !important;
+    opacity: 1 !important;
+    width: 335px !important;
+}
+
+.topBarSearchForm {
+    padding: 10px;
+    width: 300px;
+}
+
+.topBarSearchForm input {
+    -ms-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.userNewsFeed .userIcon {
+    width: 70px;
+}
+
+.userNewsFeed {
+    margin: 0px 0px 6px;
+    padding: 5px;
+    border: 1px solid rgb(179, 175, 175);
+    -webkit-box-shadow: 0 2px 9px 0 #CCCCCC;
+    -ms-box-shadow: 0 2px 9px 0 #CCCCCC;
+    box-shadow: 0 2px 9px 0 #CCCCCC;
+}
+
+.userNewsFeed .commentMessage {
+    float: none;
+}
+
+.userNewsFeed .commentDisplay {
+    padding: 5px;
+    background-color: aliceblue;
+    margin: 0px 0px 12px 0px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid brown;
+}
+
+.userNewsFeed .commentDisplay .userIconMini {
+    height: 34px;
+    width: 41px;
+}
+
+.userNewsFeed .commentDisplay .commentedBy {
+    font-family: cursive;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.userNewsFeed .commentDisplay p.comment {
+    padding: 2px;
+    margin: 0px 1px 6px 0px;
+}
+
+.userNewsFeed .commentDisplay a.userInfoLink:hover {
+    text-decoration: none;
+}
+
+.userNewsFeed a.userInfoLink:hover {
+    text-decoration: none;
+}
+
+.userNewsFeed .postMessage {
+    padding: 10px 0px 2px 0px;
+}
+
+.userNewsFeed a.postLike:hover {
+    text-decoration: none;
+}
+
+.userNewsFeed .postedBy {
+    font-family: cursive;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+div.findFriendrow {
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    float: left;
+    margin: 3px 3px 10px 3px;
+    padding: 3px;
+    width: 270px;
+}
+
+div.findFriendrow img {
+    float: left;
+    width: 100px;
+    padding-right: 10px;
+}
+
+div.findFriendrow div.infoContainer {
+    float: left;
+}
+
+div.info {
+    height: 58px;
+}
+
+div.clearBoth {
+    clear: both;
+} 
+
+.block {
+    border: 1px solid #CCCCCC;
+    -webkit-box-shadow: 0 2px 5px 0 #CCCCCC;
+    -ms-box-shadow: 0 2px 5px 0 #CCCCCC;
+    box-shadow: 0 2px 5px 0 #CCCCCC;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.friendIcon img {
+    height: 50px; width: 60px;
+}
+
+.friendBlock {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+}
+.red {
+    color: red;
+}
+
+.yellowHeader3 {
+    color: #FF9900;
+    font-weight: 600;
+    margin-bottom: 0.75em;
+}

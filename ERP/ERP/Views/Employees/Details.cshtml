@@ -1,0 +1,41 @@
+@model ERP.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Employee</legend>
+
+    <div class="display-label">Gid</div>
+    <div class="display-field">@Model.Gid</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Address</div>
+    <div class="display-field">@Model.Address</div>
+
+    <div class="display-label">DeptId</div>
+    <div class="display-field">@Model.DeptId</div>
+
+    <div class="display-label">DesignationId</div>
+    <div class="display-field">@Model.DesignationId</div>
+
+    <div class="display-label">BloodGroupId</div>
+    <div class="display-field">@Model.BloodGroupId</div>
+
+    <div class="display-label">MaritalStatus</div>
+    <div class="display-field">@Model.MaritalStatus</div>
+
+    <div class="display-label">JoiningDt</div>
+    <div class="display-field">@String.Format("{0:g}", Model.JoiningDt)</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

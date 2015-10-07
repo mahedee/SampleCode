@@ -1,0 +1,47 @@
+﻿<h2>Profile Update Form</h2>
+
+<hr />
+
+<form class="form-horizontal" role="form" name="ProfileEditForm" novalidate>
+
+    <h4>Edit your account information</h4>
+    <hr />
+
+    <ul class="text-danger" ng-if="profileEditErrors">
+        <li ng-repeat="profileEditError in profileEditErrors">{{ profileEditError }}</li>
+    </ul>
+
+    <div class="form-group">
+        <label for="FirstName" class="col-md-2 control-label">First Name</label>
+        <div class="col-md-10">
+            <input type="text" ng-model="user.firstName" name="FirstName" id="FirstName" class="form-control" ng-required="true" />
+            <span class="field-validation-error" ng-if="profileEditFormSubmitted && ProfileEditForm.FirstName.$invalid">The First Name field is invalid.</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="LastName" class="col-md-2 control-label">Last Name</label>
+        <div class="col-md-10">
+            <input type="text" ng-model="user.lastName" name="LastName" id="LastName" class="form-control" ng-required="true" />
+            <span class="field-validation-error" ng-if="profileEditFormSubmitted && ProfileEditForm.LastName.$invalid">The Last Name field is invalid.</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="button" class="btn btn-success" value="Update" ng-click="update(user)" />
+            <span ng-if="profileEditInProgresss">
+                <i class="fa fa-spinner fa-spin fa-lg"></i> In Progress...
+            </span>
+        </div>
+    </div>
+
+</form>
+
+<div ng-if="user.avatarUrl" style="width: 78px;">
+    <img ng-src="{{user.avatarUrl}}" alt="user.userName" class="img-thumbnail" />
+</div>
+
+<form>
+    <input type="file" name="avatar" onchange="uploadAvatar()" />
+</form>

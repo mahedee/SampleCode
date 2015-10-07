@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP", "ERP\ERP.csproj", "{29830F0D-1248-4171-ABA6-6AC469EE6B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Tests", "ERP.Tests\ERP.Tests.csproj", "{AD0D902A-06BC-4FBB-AEAC-E91A811B6F20}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsmahedee.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ERP.Tests\\ERP.Tests.csproj
+		SccProjectName1 = ERP.Tests
+		SccLocalPath1 = ERP.Tests
+		SccProjectUniqueName2 = ERP\\ERP.csproj
+		SccProjectName2 = ERP
+		SccLocalPath2 = ERP
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29830F0D-1248-4171-ABA6-6AC469EE6B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29830F0D-1248-4171-ABA6-6AC469EE6B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29830F0D-1248-4171-ABA6-6AC469EE6B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29830F0D-1248-4171-ABA6-6AC469EE6B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0D902A-06BC-4FBB-AEAC-E91A811B6F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0D902A-06BC-4FBB-AEAC-E91A811B6F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0D902A-06BC-4FBB-AEAC-E91A811B6F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0D902A-06BC-4FBB-AEAC-E91A811B6F20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

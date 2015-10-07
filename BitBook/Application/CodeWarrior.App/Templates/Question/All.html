@@ -1,0 +1,7 @@
+﻿<h3>{{newQuestion}} New Question</h3>
+
+<ul>
+    <li ng-repeat="question in questions track by $index" ng-click="clickInQuestion(question)">
+        {{question.title}}
+    </li>
+</ul>
